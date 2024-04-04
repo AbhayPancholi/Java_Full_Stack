@@ -8,13 +8,16 @@ static{
 System.out.println("Static block 2 says I am first");
 }
 
-static void add(int a, int b){
-System.out.println(a+b);}
+static int add(int a, int b){
+//System.out.println(a+b);
+return a+b}
 
 public static void main(String[] ar){
 System.out.println("main() says I am first");
-add(2,3);
-Test1.add(2,3);
+int sum = add(2,3);
+int sum1 = Test1.add(2,3);
+System.out.println(sum);
+System.out.println(sum1);
 }
 
 static{
