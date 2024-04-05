@@ -1,0 +1,15 @@
+Access Modifiers
+----------------
+1. Public.
+2. Protected.
+3. Default (no modifier) package friendly.
+4. Private.
+
+Components of class:
+class, mehtods, variables
+
+             |  public  | protected |  default |  private
+class        |   yes    |    no     |    yes   |     no
+nested class |   yes    |    yes    |    yes   |     yes
+methods      |   yes    |    yes    |    yes   |     yes
+variables    |   yes    |    yes    |    yes   |     yes
