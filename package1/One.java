@@ -26,8 +26,8 @@ D:\package1>
 
 package package1;
 
-class One{
-void add(int a){
+public class One{
+protected void add(int a){
 a++;
 System.out.println(a);}
 
