@@ -1,4 +1,4 @@
-/* Fucnction overloading */
+/* Fucnction overloading - it is compile time operation*/
 
 class FunctionOverLoading{
 
