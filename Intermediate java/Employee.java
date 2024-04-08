@@ -1,4 +1,4 @@
-class Employee{
+class Employee{//This class extends java.lang.object class
 
 int empid;
 String empname;
@@ -35,6 +35,12 @@ Employee e2=new Employee();
 System.out.println(e2.empid);
 System.out.println(e2.empname);
 System.out.println(e2.salary);
+
+System.out.println(e1 instanceof Employee);
+System.out.println(e2 instanceof Employee);
+System.out.println(e1 instanceof Object);
+System.out.println(e2 instanceof Object);
+
 
 }
 
