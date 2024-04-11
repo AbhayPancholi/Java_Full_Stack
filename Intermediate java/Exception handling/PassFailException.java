@@ -4,7 +4,7 @@ String ex;
 PassFailException(String myexp){
 this.ex = myexp;
 System.out.println("PassFailException Object created");
-System.out.println("Better luck next time!"+this.ex);
+System.out.println("Better luck next time!\n");
 }
 
 public String toString(){
