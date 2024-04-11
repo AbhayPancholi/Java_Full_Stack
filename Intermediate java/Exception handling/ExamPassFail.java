@@ -6,7 +6,7 @@ int marks = Integer.parseInt(mymarks);
 try{
 if(marks < 40){
 throw new PassFailException(mymarks);
-}
+}else{System.out.println("You are pass");}
 }catch(PassFailException e){
 System.out.println("You are not qualified:"+e);}
 }
