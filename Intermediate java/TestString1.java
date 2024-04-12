@@ -15,5 +15,5 @@ s2 = s2+"hi";
 System.out.println("s1 is: "+s1);
 System.out.println("s2 is: "+s2);
 
-/*Hello will be refernced by s1 and s2 when you change the value of s2 it iwll not */
+/*Hello will be refernced by s1 and s2 when you change the value of s2 it will not append the value of as it is ref by s1 and s2 so new object with new value hellohai will be created and ref by s1 */
 }}
