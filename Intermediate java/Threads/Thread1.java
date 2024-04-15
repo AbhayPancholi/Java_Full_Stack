@@ -1,5 +1,5 @@
 class Thread1{
-
+//The static block is called before the main method
 static{
 System.out.println("Static block: "+Thread.currentThread().getName());
 System.out.println(Thread.currentThread().getPriority());
