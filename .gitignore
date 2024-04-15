@@ -3,3 +3,6 @@
 
 #Ignore Metadata file
 .metadata/
+
+#Ignore all class files
+*.class
