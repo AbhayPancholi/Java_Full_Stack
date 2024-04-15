@@ -1,0 +1,5 @@
+#Ignore Project file
+.project
+
+#Ignore Metadata file
+.metadata/
