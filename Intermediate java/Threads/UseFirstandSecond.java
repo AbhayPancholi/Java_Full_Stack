@@ -28,6 +28,8 @@ class UseFirstandSecond{
     public static void main(String[] ar) {
         FirstThread t1 = new FirstThread();
         t1.start();
+	try{
+	t1.join();}catch(InterruptedException e){System.out.println("join failed");}
         SecondThread t2 = new SecondThread();
         t2.start();
     }
