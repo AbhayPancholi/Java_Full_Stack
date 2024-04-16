@@ -32,5 +32,6 @@ class UseFirstandSecond{
 	t1.join();}catch(InterruptedException e){System.out.println("join failed");}
         SecondThread t2 = new SecondThread();
         t2.start();
+//The join method lets t1 finish the execution first, and then the //thread t2 will start
     }
 }
