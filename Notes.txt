@@ -24,3 +24,6 @@ Object
 Throwable:
 1.Error
 2.Exception
+
+
+Concise coding is the new approach to coding by jdk 8.
