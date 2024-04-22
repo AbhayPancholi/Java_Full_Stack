@@ -27,3 +27,4 @@ Throwable:
 
 
 Concise coding is the new approach to coding by jdk 8.
+Java is a compile and interpreted
