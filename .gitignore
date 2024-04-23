@@ -1,8 +1,8 @@
-#Ignore Project file
-.project
-
-#Ignore Metadata file
-.metadata/
-
 #Ignore all class files
 *.class
+
+#Ignore files in eclipse workspace
+.classpath/
+.settings/
+/bin/
+.project/
