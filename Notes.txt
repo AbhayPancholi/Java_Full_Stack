@@ -28,3 +28,9 @@ Throwable:
 
 Concise coding is the new approach to coding by jdk 8.
 Java is a compile and interpreted
+
+Array list is the implementation of global array
+Array list is good for reading as it has indexing, it will accept order and duplicates
+Finalize and clone are the two protected methods.
+
+List ai = new LinkedList();//This is called dynamic binding
