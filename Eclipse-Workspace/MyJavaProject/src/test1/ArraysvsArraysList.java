@@ -2,6 +2,9 @@ package test1;
 import java.util.Arrays;
 import java.util.ArrayList;
 
+//Array list is the implementation of global array
+//Array list is good for reading as it has indexing, it will accept order and duplicates
+//finalize and clone are the two protected methods
 public class ArraysvsArraysList {
 
 	public static void main(String[] args) {
