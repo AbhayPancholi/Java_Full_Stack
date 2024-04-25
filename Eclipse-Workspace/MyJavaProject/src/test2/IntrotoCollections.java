@@ -1,4 +1,4 @@
-package collections1;
+package test2;
 
 //collection interface provides abstract of following basic operations
 //add(E element)
