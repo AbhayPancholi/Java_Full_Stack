@@ -36,3 +36,11 @@ Array list is good for reading as it has indexing, it will accept order and dupl
 Finalize and clone are the two protected methods.
 
 List ai = new LinkedList();//This is called dynamic binding
+
+
+to show the coding of the mysql behind a table:
+show create table tablename;
+
+Mysql has two engines:
+1.EnoDB - lets create 1024 columns for DB.
+2.MyISAM - lets create 10000 columns for DB
