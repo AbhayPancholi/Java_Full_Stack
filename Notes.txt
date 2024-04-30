@@ -44,3 +44,11 @@ show create table tablename;
 Mysql has two engines:
 1.EnoDB - lets create 1024 columns for DB.
 2.MyISAM - lets create 10000 columns for DB
+
+
+IO is:
+1.Based on type of data (byte or char).
+2. Based on type of operation: read-write others (we can create files and folders).
+3. Based on access - sequential and random.
+
+Gather information on serialization and deserailization
