@@ -22,6 +22,7 @@ public class RandomAccessFileDemo {
 			System.out.println(" "+raf.readLine());
 			
 			raf.close();
+			
 		}catch(IOException ex) {
 			ex.printStackTrace();
 		}
