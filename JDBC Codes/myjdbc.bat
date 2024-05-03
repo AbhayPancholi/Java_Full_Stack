@@ -1,0 +1,1 @@
+set classpath=%classpath%;d:\;.;D:\Study\Java Full Stack\mysql-connector-j-8.4.0.jar
