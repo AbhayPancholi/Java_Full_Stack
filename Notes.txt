@@ -52,3 +52,10 @@ IO is:
 3. Based on access - sequential and random.
 
 Gather information on serialization and deserailization
+
+
+Steps to connect to database:
+1. Import SQL package
+2. Driver 
+3. Class Path
+4. Establish Connection
