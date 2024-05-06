@@ -59,3 +59,6 @@ Steps to connect to database:
 2. Driver 
 3. Class Path
 4. Establish Connection
+
+
+In SQL Mulitple row update example is billing in DMart. To do multiple row update we have to execute "addbatch" or "execute batch" query.
