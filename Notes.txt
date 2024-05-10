@@ -62,3 +62,10 @@ Steps to connect to database:
 
 
 In SQL Mulitple row update example is billing in DMart. To do multiple row update we have to execute "addbatch" or "execute batch" query.
+
+Command to create a duplicated table:
+create table employee as select * from customer
+if you want only structure:
+create table employee as select * from customer where 1=2;
+if we want only to select specific columns:
+create table employee as select uid, name  form user where 1=3;
