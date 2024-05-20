@@ -1,0 +1,5 @@
+#Ignore these files
+.classpath
+.project
+.settings/
+build/
