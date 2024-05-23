@@ -2,13 +2,33 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
   <display-name>WebProject_1</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
+    <welcome-file>Session.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
     <welcome-file>index.htm</welcome-file>
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>Sessiontest</servlet-name>
+    <servlet-class>test23.Sessiontest1</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Sessiontest</servlet-name>
+    <url-pattern>/Sessiontest1</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>TourGuidance</servlet-name>
+    <servlet-class>test23.TourGuidance</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>TourGuidance</servlet-name>
+    <url-pattern>/tour</url-pattern>
+  </servlet-mapping>
   
   <servlet>
     <servlet-name>myerror</servlet-name>
@@ -18,25 +38,21 @@
   <servlet-mapping>
     <servlet-name>myerror</servlet-name>
     <url-pattern>/myerror</url-pattern>
-</servlet-mapping>
+  </servlet-mapping>
 
   <servlet>
     <servlet-name>Addservlet23</servlet-name>
     <servlet-class>test23.Addservlet23</servlet-class>
- </servlet>
+  </servlet>
   
-<servlet-mapping>
+  <servlet-mapping>
     <servlet-name>Addservlet23</servlet-name>
     <url-pattern>/add2</url-pattern>
-</servlet-mapping>
+  </servlet-mapping>
 
 
   <error-page>
-  <exception-type>
-  java.lang.NumberFormatException
-  </exception-type>
-  <location>
-  /myerror
-  </location>
+    <exception-type>java.lang.NumberFormatException</exception-type>
+    <location>/myerror</location>
   </error-page>
 </web-app>
