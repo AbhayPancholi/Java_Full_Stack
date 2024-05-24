@@ -3,9 +3,9 @@
 
 #Ignore files in eclipse workspace
 #.classpath
-.settings/
-/bin/
-.project/
-.metadata/
-.project
+**.settings/
+**/bin/
+**.project/
+**.metadata/
+**.project
 **/Servers/
