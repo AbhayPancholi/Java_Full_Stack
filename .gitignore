@@ -2,7 +2,7 @@
 *.class
 
 #Ignore files in eclipse workspace
-#.classpath
+**.classpath
 **.settings/
 **/bin/
 **.project/
