@@ -73,3 +73,5 @@ create table employee as select uid, name  form user where 1=3;
 
 Life cycle of a servlet.
 Life cycle of JSP.
+
+JPA is an interface and hibernet is a class.
