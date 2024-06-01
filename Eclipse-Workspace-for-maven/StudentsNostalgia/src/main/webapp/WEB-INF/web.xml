@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         version="2.5" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"> 
+
+    <display-name>Student Autograph Application</display-name>
+
+    <welcome-file-list>
+        <welcome-file>Welcome.jsp</welcome-file>
+    </welcome-file-list>
+
+   <servlet>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <servlet-class>servletApplications.Registration</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <url-pattern>/Registration</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <servlet-class>servletApplications.UserLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <url-pattern>/UserLogin</url-pattern>
+    </servlet-mapping>
+    
+    <error-page>
+	    <exception-type>java.lang.Throwable</exception-type>
+	    <location>/error</location>
+	</error-page>
+    
+</web-app>
