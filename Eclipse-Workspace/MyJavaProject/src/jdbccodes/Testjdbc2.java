@@ -1,4 +1,5 @@
 //import sql package
+package jdbccodes;
 import java.sql.*;
 
 class Testjdbc2{
