@@ -1,8 +1,6 @@
 package servletApplications;
 
-
 import javax.servlet.ServletException;
-//import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,14 +15,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-//@WebServlet("/login")
 public class UserLogin extends HttpServlet {
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
@@ -45,8 +39,10 @@ public class UserLogin extends HttpServlet {
                     session.setAttribute("userId", resultSet.getInt("id"));
                     session.setAttribute("collegeId", resultSet.getInt("college_id"));
                     session.setAttribute("departmentId", resultSet.getInt("department_id"));
+                    session.setAttribute("username", resultSet.getString("username"));
+                    session.setAttribute("justLoggedIn", true);
 
-                    response.sendRedirect("Welcome.jsp");
+                    response.sendRedirect("Home.jsp");
                 } else {
                     response.sendRedirect("login.jsp?error=Invalid%20credentials.%20Please%20try%20again.");
                 }
