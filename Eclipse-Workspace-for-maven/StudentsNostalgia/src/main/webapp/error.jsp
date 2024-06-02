@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Oops! Something went wrong.</h1>
         <p class="message">${errorMessage}</p>
-        <a href="Welcome.jsp" class="home-link">Go to Home</a>
+        <a href="Landing.jsp" class="home-link">Go to Home</a>
     </div>
 </body>
 </html>
