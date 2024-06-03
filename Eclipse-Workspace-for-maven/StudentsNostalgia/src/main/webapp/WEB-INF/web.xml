@@ -45,6 +45,13 @@
     	<servlet-name>Comments</servlet-name>
     	<servlet-class>servletApplications.Comments</servlet-class>
     </servlet>
+    <servlet>
+    	<description>
+    	</description>
+    	<display-name>DeleteImage</display-name>
+    	<servlet-name>DeleteImage</servlet-name>
+    	<servlet-class>servletApplications.DeleteImage</servlet-class>
+    </servlet>
     
     <servlet-mapping>
         <servlet-name>UserLoginServlet</servlet-name>
@@ -61,6 +68,10 @@
     <servlet-mapping>
     	<servlet-name>Comments</servlet-name>
     	<url-pattern>/Comments</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>DeleteImage</servlet-name>
+    	<url-pattern>/DeleteImage</url-pattern>
     </servlet-mapping>
     
     
