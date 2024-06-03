@@ -32,7 +32,7 @@ public class UploadImage extends HttpServlet {
         Part imagePart = request.getPart("image");
 
         String fileName = Paths.get(imagePart.getSubmittedFileName()).getFileName().toString();
-        String uploadDir = getServletContext().getRealPath("/uploads");
+        String uploadDir = getServletContext().getRealPath("/Uploads");
         File uploadFile = new File(uploadDir, fileName);
         imagePart.write(uploadFile.getAbsolutePath());
 
@@ -44,7 +44,7 @@ public class UploadImage extends HttpServlet {
             PreparedStatement statement = conn.prepareStatement(sql);
             statement.setInt(1, userId);
             statement.setInt(2, collegeId);
-            statement.setString(3, "uploads/" + fileName);
+            statement.setString(3, "Uploads/" + fileName);
             statement.setTimestamp(4, new Timestamp(System.currentTimeMillis()));
             statement.executeUpdate();
             conn.close();
