@@ -60,11 +60,11 @@
     
     <nav>
         <ul>
-        	<li><a href="Logout">Logout</a></li>
-        	<li><a href="Settings.jsp">Settings</a></li>
-        	<li><a href="Notifications.jsp">Notifications</a></li>
-        	<li><a href="upload.jsp">Upload Image</a></li>
-        	<li><a href="Profile.jsp">Profile</a></li>
+            <li><a href="Logout">Logout</a></li>
+            <li><a href="Settings.jsp">Settings</a></li>
+            <li><a href="Notifications.jsp">Notifications</a></li>
+            <li><a href="Upload.jsp">Upload Image</a></li>
+            <li><a href="Profile.jsp">Profile</a></li>
             <li><a href="Home.jsp">Home</a></li>
             <li class="logo"><img src="Images/Logo.png" alt="Website Logo"></li>
         </ul>
@@ -88,6 +88,7 @@
                         String imagePath = resultSet.getString("image_path");
                         String uploaderName = resultSet.getString("username");
                         Timestamp uploadDate = resultSet.getTimestamp("upload_date");
+                        int uploaderId = resultSet.getInt("user_id");
             %>
             <div class="post">
                 <img src="<%= imagePath %>" alt="Image">
@@ -101,9 +102,15 @@
                         <input type="hidden" name="imageId" value="<%= imageId %>">
                         <button type="submit">Share</button>
                     </form>
+                    <% if (uploaderId == userId) { %>
+                    <form action="DeleteImage" method="post">
+                        <input type="hidden" name="imageId" value="<%= imageId %>">
+                        <button type="submit">Delete</button>
+                    </form>
+                    <% } %>
                 </div>
                 <div class="comments">
-                    <form action="Comment" method="post">
+                    <form action="Comments" method="post">
                         <input type="hidden" name="imageId" value="<%= imageId %>">
                         <textarea name="comment" required></textarea>
                         <button type="submit">Comment</button>
