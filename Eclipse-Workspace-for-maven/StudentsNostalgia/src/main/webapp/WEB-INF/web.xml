@@ -52,6 +52,34 @@
     	<servlet-name>DeleteImage</servlet-name>
     	<servlet-class>servletApplications.DeleteImage</servlet-class>
     </servlet>
+    <servlet>
+    	<description>
+    	</description>
+    	<display-name>UpdateProfile</display-name>
+    	<servlet-name>UpdateProfile</servlet-name>
+    	<servlet-class>servletApplications.UpdateProfile</servlet-class>
+    </servlet>
+    <servlet>
+    	<description>
+    	</description>
+    	<display-name>NotificationServlet</display-name>
+    	<servlet-name>NotificationServlet</servlet-name>
+    	<servlet-class>servletApplications.NotificationServlet</servlet-class>
+    </servlet>
+    <servlet>
+    	<description>
+    	</description>
+    	<display-name>UpdateProfileForSettings</display-name>
+    	<servlet-name>UpdateProfileForSettings</servlet-name>
+    	<servlet-class>servletApplications.UpdateProfileForSettings</servlet-class>
+    </servlet>
+    <servlet>
+    	<description>
+    	</description>
+    	<display-name>ChangePassowrd</display-name>
+    	<servlet-name>ChangePassowrd</servlet-name>
+    	<servlet-class>servletApplications.ChangePassowrd</servlet-class>
+    </servlet>
     
     <servlet-mapping>
         <servlet-name>UserLoginServlet</servlet-name>
@@ -72,6 +100,22 @@
     <servlet-mapping>
     	<servlet-name>DeleteImage</servlet-name>
     	<url-pattern>/DeleteImage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>UpdateProfile</servlet-name>
+    	<url-pattern>/UpdateProfile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>NotificationServlet</servlet-name>
+    	<url-pattern>/NotificationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>UpdateProfileForSettings</servlet-name>
+    	<url-pattern>/UpdateProfileForSettings</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>ChangePassowrd</servlet-name>
+    	<url-pattern>/ChangePassowrd</url-pattern>
     </servlet-mapping>
     
     
