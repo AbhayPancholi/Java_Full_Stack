@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.profile-info {
+    margin-bottom: 30px;
+}
+
+.profile-info p {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.profile-info form {
+    margin-top: 20px;
+}
+
+.profile-info label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.profile-info input[type="text"],
+.profile-info input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.profile-info button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.profile-info button:hover {
+    background-color: #45a049;
+}
+
+.uploaded-images {
+    margin-top: 30px;
+}
+
+.uploaded-images h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.image-post {
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.image-post img {
+    max-width: 150px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.image-post p {
+    color: #666;
+    margin: 0;
+}
+
+.image-post form {
+    margin-left: auto;
+}
+
+.image-post button {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.image-post button:hover {
+    background-color: #e53935;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+nav ul li.logo {
+    float: right;
+    padding: 0;
+}
+
+nav ul li.logo img {
+    height: 50px;
+    width: auto;
+}
