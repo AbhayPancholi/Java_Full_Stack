@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" type="text/css" href="CSS/Reg1istration.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Registration.css">
     <script type="text/javascript">
         function validateForm() {
             var password = document.getElementById("password").value;
@@ -111,7 +111,7 @@
             </form>
         </div>
         
-        <div id="confirmDetails" style="display:none;">
+        <div id="confirmDetails">
             <h3>Confirm Your Details</h3>
             <p><strong>First Name:</strong> <span id="confirmFirstname"></span></p>
             <p><strong>Last Name:</strong> <span id="confirmLastname"></span></p>
@@ -137,10 +137,9 @@
                 <input type="submit" value="Submit">
             </form>
         </div>
-        
-        <div class="login-link">
-            <p>Already registered? <a href="login.jsp">Login here</a></p>
-        </div>
+    </div>
+    <div class="login-link">
+        <p>Already registered? <a href="login.jsp">Login here</a></p>
     </div>
 </body>
 </html>
