@@ -1,98 +1,99 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f3f4f6;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #f2f2f2;
     margin: 0;
-    padding: 20px; /* Added padding for small screens */
+    padding: 0;
 }
 
 .registration-container {
-    background: white;
-    padding: 2em;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%;
-    text-align: center;
 }
 
 h2 {
+    text-align: center;
     color: #4A90E2;
-    margin-bottom: 1em;
-}
-
-h3 {
-    color: #4A90E2;
-    margin-bottom: 1em;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 20px;
 }
 
 label {
     display: block;
-    margin-bottom: 0.5em;
+    margin-bottom: 5px;
     color: #555;
-    width: 100%;
-    text-align: left;
-    font-weight: bold; /* Added bold for better readability */
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
 select {
-    width: calc(100% - 1em);
-    padding: 0.75em; /* Increased padding for better touch targets */
-    margin-bottom: 1em;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 1em;
-    background-color: #f9f9f9; /* Subtle background color */
-    transition: border-color 0.3s; /* Smooth transition for focus */
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus,
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="email"]:focus, 
 select:focus {
-    border-color: #4A90E2; /* Highlight on focus */
-    outline: none; /* Remove default outline */
+    border-color: #007BFF;
+    outline: none;
 }
 
-button, input[type="submit"] {
+button {
     width: 100%;
-    padding: 0.75em;
-    background: #4A90E2;
+    padding: 10px;
+    background-color: #4A90E2;
+    color: #fff;
     border: none;
     border-radius: 4px;
-    color: white;
-    font-size: 1em;
     cursor: pointer;
-    margin-bottom: 1em; /* Added margin for spacing */
-    transition: background-color 0.3s; /* Smooth transition for hover */
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
-button:hover, input[type="submit"]:hover {
-    background: #357ABD;
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Confirm Details Section */
+#confirmDetails {
+    display: none;
+}
+
+#confirmDetails h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#confirmDetails p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#confirmDetails p strong {
+    color: #333;
 }
 
 .error-message {
-    color: red;
-    margin-bottom: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 .login-link {
-    margin-top: 20px;
+    text-align: center;
 }
 
 .login-link a {
@@ -102,15 +103,4 @@ button:hover, input[type="submit"]:hover {
 
 .login-link a:hover {
     text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    body {
-        padding: 1em;
-    }
-
-    .registration-container {
-        padding: 1em;
-    }
 }
