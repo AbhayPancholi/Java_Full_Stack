@@ -75,3 +75,22 @@ Life cycle of a servlet.
 Life cycle of JSP.
 
 JPA is an interface and hibernet is a class.
+
+
+Doget do post methods difference
+servlet lifecyle
+hibernate code to store data (steps)
+JDBC connection 
+jsp lifecycle, jsp error handling
+HQL basics and steps
+deployment of servlets, using xml and annotated servlets
+http methods
+difference between http and https
+hibernate core
+default port for tomcat.
+
+Hibernate 5 marks question ie one class and the steps.
+Memories of hibernate
+servlet configuration
+
+start on 
