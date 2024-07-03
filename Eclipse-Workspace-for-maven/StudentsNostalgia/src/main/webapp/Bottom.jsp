@@ -10,8 +10,8 @@
         <div class="footer-container">
             <div class="footer-section contact-info">
                 <h3>Contact Information</h3>
-                <p>Email: <a href="mailto:info@studentsautograph.com">info@studentsautograph.com</a></p>
-                <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+                <p>Email: <a href="mailto:abhaypancholi@outlook.com">abhaypancholi@outlook.com</a></p>
+                <p>Phone: <a href="tel:+91 84592 47685">+91 84592 47685</a></p>
                 <p>Address: 123 Education Lane, Knowledge City, ED 12345</p>
             </div>
             <div class="footer-section social-media">
