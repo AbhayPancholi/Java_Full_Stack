@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+     <bean id="trainee1" class="spring2.Trainee">
+       <property name="traineeName" value="csmss batch1"></property>
+   	</bean>
+   
+      <bean id="trainee2" class="spring2.Trainee">
+       <property name="traineeName" value="csmss batch2"></property>
+   </bean>
+   
+   <!--  <bean id="city1" class="vrb1.city -->
+ 
+   </beans>
